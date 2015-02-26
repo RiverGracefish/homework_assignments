@@ -1,9 +1,14 @@
 #!/usr/bin/env ruby
 
 def bottles_of_beer(beer)
-  if beer > 1
+  if beer > 2
     puts "#{beer} bottles of beer on the wall, #{beer} bottles of beer.
 Take one down and pass it around, #{beer - 1} bottles of beer on the wall."
+    puts ''
+    bottles_of_beer(beer - 1)
+  elsif beer == 2
+    puts "#{beer} bottles of beer on the wall, #{beer} bottles of beer.
+Take one down and pass it around, #{beer - 1} bottle of beer on the wall."
     puts ''
     bottles_of_beer(beer - 1)
   elsif beer == 1
