@@ -37,7 +37,7 @@ puts "sit around #{verb3}. Last summer, my little brother"
 puts "fell in a/an #{noun6} and got poison #{plant} all"
 puts "over his #{body}. My family is going to go to (the)"
 puts "#{place}, and I will practice #{verb4}. Parents"
-puts 'need vacations more then kids because parents are always very'
+puts 'need vacations more than kids because parents are always very'
 puts "#{adj3} and because they have to work #{number}"
 puts "hours every day all year making enough #{noun7} to pay"
 puts 'for the vacation.'
