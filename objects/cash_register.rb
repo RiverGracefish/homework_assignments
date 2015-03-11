@@ -3,19 +3,20 @@
 # Create a CashRegister class
 # purchase method takes a floating number and adds that to the total
 # total method returns how much is owed
-# pay method takes one floating number for how much is paid, should return how much change is given
+# pay method takes one floating number for how much is paid,
+# should return how much change is given
 class CashRegister
   def initialize
     @total = 0.00
   end
 
   def total
-    @total.round(2)
+    format('$%.2f', @total)
   end
 
   def purchase(amount)
     @puchase = amount.to_f
-    @total = (@total + @puchase).round(2)
+    format('$%.2f', @total = (@total + @puchase))
   end
 
   def pay(payment)
@@ -24,9 +25,9 @@ class CashRegister
     @total -= pay
     if @total < 0
       @total = 0
-      - new_total.round(2)
+      format('$%.2f', - new_total)
     else
-      @total.round(2)
+      format('$%.2f', @total)
     end
   end
 end
