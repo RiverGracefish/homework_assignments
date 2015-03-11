@@ -37,11 +37,12 @@ if __FILE__ == $PROGRAM_NAME
   schedule = Schedule.new('Sat', 22)
   puts schedule
 
-  puts "#{schedule.work.join(', ')} I have work from 6am to 3pm with 1 hour lunch time."
+  puts "#{schedule.work.join(', ')}
+    I have work from 6am to 3pm with 1 hour lunch time."
 
-  puts "#{schedule.school.join(', ')} I have school from 6 : 30 pm to 9 : 30 pm."
+  puts "#{schedule.school.join(', ')}
+    I have school from 6 : 30 pm to 9 : 30 pm."
 
-  puts "#{schedule.work && schedule.school.join(', ')} I have both school and work."
+  puts "#{schedule.work && schedule.school.join(', ')}
+    I have both school and work."
 end
-
-
