@@ -27,17 +27,17 @@ puts "The first four elements are '#{numbers.first(4).join(', ')}'"
 # If we delete 5, 6 and 7 from the array,
 # we're left with [1,2,3,4,8,9,10]
 puts "If we delete 5, 6 and 7 from the array, we're left with"\
-" [#{numbers.delete_if{ |n| n > 4 && n < 8}.join(',')}]"
+" [#{numbers.delete_if { |n| n > 4 && n < 8 }.join(',')}]"
 # If we add 5 at the beginning of the array,
 # we're left with [5,1,2,3,4,8,9,10]
 puts "If we add 5 at the beginning of the array, we're left with"\
-" [#{numbers.delete_if{ |n| n > 4 && n < 8}.unshift(5).join(',')}]"
+" [#{numbers.delete_if { |n| n > 4 && n < 8 }.unshift(5).join(',')}]"
 # If we add 6 at the end of the array,
 # we're left with [5,1,2,3,4,8,9,10,6]
 puts "If we add 6 at the end of the array, we're left with"\
-" [#{numbers.delete_if{ |n| n > 4 && n < 8}.unshift(5).push(6).join(',')}]"
+" [#{numbers.delete_if { |n| n > 4 && n < 8 }.unshift(5).push(6).join(',')}]"
 # Only the elements [9, 10] are > 8.
-puts "Only the elements #{numbers.select { |n| n > 8}} are > 8."
+puts "Only the elements #{numbers.select { |n| n > 8 }} are > 8."
 # If we remove all the elements,
 # then the length of the array is 0
 puts 'If we remove all the elements, then the length of the array is'\
