@@ -25,9 +25,9 @@ class CashRegister
     @total -= pay
     if @total < 0
       @total = 0
-      format('$%.2f', - new_total)
+      "Your change is #{format('$%.2f', - new_total)}"
     else
-      "Your new total is $#{format('$%.2f', @total)}"
+      "Your new total is #{format('$%.2f', @total)}"
     end
   end
 end
