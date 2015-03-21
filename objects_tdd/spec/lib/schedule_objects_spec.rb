@@ -5,8 +5,10 @@ describe Schedule do
     expect(subject).to be_a(Schedule)
   end
 
-  it 'should initialize date and time'
-
+  # it 'should initialize date and time' do
+  #   expect(@schedule).to
+  # end
+  # 
   describe 'date' do
     it 'should print out all date in a week'
 
