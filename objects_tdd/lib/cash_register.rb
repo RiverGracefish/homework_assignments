@@ -16,11 +16,11 @@ class CashRegister
     if pay > 0
       if pay < total
         @total -= pay
-      elsif pay == tatal
-        @tatal = 0
+      elsif pay == total
+        @total = 0
       else
-        @tatal = 0
-        @tatal = -new_total
+        @total = 0
+        @total = -new_total
       end
     elsif pay == 0
       @total
